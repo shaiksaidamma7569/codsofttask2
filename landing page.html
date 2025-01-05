@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+
+header{
+    background: #5786ed;
+    position: relative;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: 0 auto;
+
+}
+.logo img{
+    display: block;
+    object-fit: cover;
+    width: 20%;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.navbar nav{
+    display: flex;
+    align-items: ceneter;
+    align-items: center;
+}
+.navbar nav li 
+{
+    list-style: none;
+    margin-left:1rem ;
+}
+.navbar nav li a{
+    text-decoration: none; 
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.6rem;
+    border-radius: 6px;
+    transition: all 0.4s ease-in;
+}
+section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1 ;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 30pxs;
+    align-items: center;
+    justify-content: 50vh;
+    height: 50vh;
+
+}
+.content h2{
+    font-size: 4.5rem;
+    color: #fff;
+    font-family: "utuntu",sans-serif;
+}
+.content p{
+    color: #fff;
+    line-height: 2;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.content button{
+    display: block;
+    margin: 2rem 0;
+    width: 21%;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    font-size:1rem ;
+    border: 4px ;
+    border: 1px solid #ddd;
+    background:inherit ;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+}
+.content button:hover,li:hover{
+    background: #3498db;
+    
+}
+.content .social_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    font-size: 1.9rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    
+}
+.content .social_icons i{
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+
+}
+
+.fa-google {  
+  background: #dd4b39;  
+  color: white;  
+}  
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+} 
+.fa-twitter { 
+
+  background: #55ACEE;  
+  color: white;  
+} 
+ .fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+.fa-pinterest {  
+  background: #cb2027;  
+  color: white;  
+}  
+
+.navbar .btn{
+    font-size: 1.2rem;
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1050px){
+    .container{
+        padding: 0 25px;
+    }
+
+}
+.content h2{
+    font-size: 4rem;
+
+.navbar nav li a{
+    font-size: 1rem;
+}
+}
+@media(max-width:902px){
+    .navbar .btn{
+        display: block;
+    }
+    .navbar nav{
+        position: fixed;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 50vh;
+        top: 0;
+        right: -100%;
+        background: #6057e4;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .navbar nav.action{
+        right: 0;
+        transition: all 0.1s ease-in-out;
+    }
+    .navbar nav li{
+        margin: 1rem 2rem;
+        border-bottom: 1px solid;
+        padding-bottom: 1rem;
+        width: 100%;
+        color: #fff;
+
+    }
+    .close-btn{
+        position: absolute;
+        top: 0;
+        left: 90px;
+        margin: 25px;
+
+    }
+    .content{
+    display: flex;
+    flex-direction: column;
+    width: 30pxs;
+    align-items: center;
+    justify-content: 50vh;
+    height: 50vh;
+
+}
+.content social_icons{
+    justify-content: space-evenly;
+    width: 50%;
+}
+.content button{
+    width: 50%;
+
+}
+    .content h2{
+        font-size: 3.5rem;
+    }
+
+}
+@media(max-width:562px){
+    .contact h2{
+        font-size: 2.5rem;
+        color: #fff;
+        font-family: "utuntu",sans-serif;
+    }
+}
+
+ </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://img.freepik.com/premium-vector/traveling-logo-design_745595-734.jpg">
+
+                </div>
+                <nav>
+                    <div class="btn">
+                        <li class="fa fa-times close-btn"></li>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"></a>About</li>
+                    <li><a href="#"></a>Services</li>
+                    <li><a href="#"></a>Contact</li>
+                    
+                </nav>
+                <div class="btn">
+                    <li class="fa fa-bars menu-btn"></li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <video autoplay muted loop>
+            <source src="856629-hd_1920_1080_30fps.mp4" type="video/mp4" />
+        </video>
+        <div class="contentainer">
+            <div class="content">
+                <h2>Tour Your Dream
+                <br>Destination with<br>
+                Travel.</h2>
+                <p>May you have a lot of fun on the way.<br> May this journey bring peace to your mind and joy to your heart.<br> Have a happy and safe journey!</p>
+                <button>Explore More</button>
+                <div class="social_icons">
+                    
+                      
+                        <li>  
+                            <a href="#" class="fa fa-google"></a>  
+                            </li> 
+                            <li> 
+                        <a href="#" class="fa fa-facebook"></a>   
+                        </li>
+                        <li>  
+                            <a href="#" class="fa fa-instagram"> </a>  
+                            </li>    
+                        <li>  
+                            <a href="#" class="fa fa-twitter"> </a>  
+                            </li>  
+
+                            <li>  
+                            <a href="#" class="fa fa-pinterest"> </a>  
+                            </li>  
+                             
+                
+
+            </div>
+        </div>
+    </section>
+    <script>
+        let menu = document.querySelector('nav'2wsx);
+let menuBtn = document.querySelector('.menu-btn');
+let closeBtn = document.querySelector('.close-btn');
+
+menuBtn.addEventListener('click',function(){
+    menu.classList.add('active');
+})
+closeBtn.addEventListener('click',function(){
+    menu.classList.remove('active');
+})
+    </script>
+
+</body>
+</html>
